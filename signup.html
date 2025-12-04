@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก - MyCuteSocial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Kanit', sans-serif;
+            background-color: #FFF0F5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .signup-container {
+            background-color: #FFE4E1;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .signup-container h2 {
+            margin-bottom: 30px;
+            color: #FF69B4;
+        }
+        .signup-container input {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #FFCCE5;
+            outline: none;
+            font-size: 16px;
+        }
+        .signup-container button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #FF69B4;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            transition: background 0.3s;
+        }
+        .signup-container button:hover {
+            background-color: #FF1493;
+        }
+        .signup-container .links {
+            margin-top: 20px;
+        }
+        .signup-container .links a {
+            color: #FF69B4;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .signup-container .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h2>สมัครสมาชิก</h2>
+        <form action="login.html" method="POST">
+            <input type="text" name="username" placeholder="ชื่อผู้ใช้" required>
+            <input type="email" name="email" placeholder="อีเมล" required>
+            <input type="password" name="password" placeholder="รหัสผ่าน" required>
+            <input type="password" name="confirm_password" placeholder="ยืนยันรหัสผ่าน" required>
+            <button type="submit">สมัครสมาชิก</button>
+        </form>
+        <div class="links">
+            <a href="login.html">เข้าสู่ระบบ</a>
+        </div>
+    </div>
+
+</body>
+</html>
